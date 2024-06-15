@@ -28,7 +28,7 @@ body {
     @apply bg-green-900 px-8 py-4 text-white transition-all hover:bg-black;
   }
   .btn_dark_green_outline {
-    @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
+    @apply border-gray-200 bg-green-900 px-8 py-5 text-white;
   }
 
   .max-container {
@@ -136,12 +136,12 @@ body {
 
   /* Feature */
   .feature-phone {
-    @apply absolute top-[13%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex  3xl:left-20;
+    @apply absolute top-[13%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex  xl:left-20;
   }
 
   /* Get App */
   .get-app {
-    @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-green-90 bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
+    @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-green-900  bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-10 sm:py-24 lg:px-20 xl:max-h-[598px] xl:rounded-xl;
   }
 }
 

@@ -1,12 +1,11 @@
-import React from "react";
 import { PEOPLE_URL } from "@/app/constants";
 import Image from "next/image";
 
 interface CampProps {
   backgroundImage: string;
   title: string;
-  subtitile: string;
-  peopleJined: string;
+  subtitle: string;
+  peopleJoined: string;
 }
 
 const CampSite = ({
@@ -17,12 +16,12 @@ const CampSite = ({
 }: CampProps) => {
   return (
     <div
-      className={`h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl `}
+      className={`h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}
     >
       <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
-        <div className="flexCenter gap-4 ">
-          <div className="rounded-full bg-green-500 p-4">
-            <Image src="./folded-map.svg" alt="map" width={28} height={28} />
+        <div className="flexCenter gap-4">
+          <div className="rounded-full bg-green-50 p-4">
+            <Image src="/folded-map.svg" alt="map" width={28} height={28} />
           </div>
           <div className="flex flex-col gap-1">
             <h4 className="bold-18 text-white">{title}</h4>
@@ -31,15 +30,15 @@ const CampSite = ({
         </div>
 
         <div className="flexCenter gap-6">
-          <span className="flex space-x-4 overflow-hidden">
+          <span className="flex -space-x-4 overflow-hidden">
             {PEOPLE_URL.map((url) => (
               <Image
                 className="inline-block h-10 w-10 rounded-full"
-                width={52}
-                height={52}
                 src={url}
                 key={url}
                 alt="person"
+                width={52}
+                height={52}
               />
             ))}
           </span>
@@ -69,7 +68,7 @@ const Camp = () => {
       </div>
 
       <div className="flexEnd mt-10 px-6 lg:-mt-60 lg:mr-6">
-        <div className="bg-green-500 p-8 lg:max-w-[500px] xl:max-w-[734px] xl:rounded-5xl xl:px-16 xl:py-20 relative w-full overflow-hidden rounded-3xl">
+        <div className="bg-green-50 p-8 lg:max-w-[500px] xl:max-w-[734px] xl:rounded-5xl xl:px-16 xl:py-20 relative w-full overflow-hidden rounded-3xl">
           <h2 className="regular-24 md:regular-32 2xl:regular-64 capitalize text-white">
             <strong>Feeling Lost</strong> And Not Knowing The Way?
           </h2>
